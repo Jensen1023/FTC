@@ -1,0 +1,17 @@
+C:\Users\Jade\Source\Repos\Testing\Testing\obj\Debug\Testing.Properties.Resources.resources
+C:\Users\Jade\Source\Repos\Testing\Testing\obj\Debug\Testing.csproj.GenerateResource.cache
+C:\Users\Jade\Source\Repos\Testing\Testing\obj\Debug\Testing.csproj.CoreCompileInputs.cache
+C:\Users\Jade\Source\Repos\Testing\Testing\bin\Debug\Testing.exe.config
+C:\Users\Jade\Source\Repos\Testing\Testing\bin\Debug\Testing.exe
+C:\Users\Jade\Source\Repos\Testing\Testing\bin\Debug\Testing.pdb
+C:\Users\Jade\Source\Repos\Testing\Testing\obj\Debug\Testing.exe
+C:\Users\Jade\Source\Repos\Testing\Testing\obj\Debug\Testing.pdb
+C:\Users\Jade\Source\Repos\Testing\Testing\obj\Debug\Testing.NewRecord.resources
+C:\Users\Jade\Source\Repos\Testing\Testing\obj\Debug\Testing.MainWindow.resources
+C:\Users\Jade\Source\Repos\Testing\Testing\obj\Debug\Testing.csprojAssemblyReference.cache
+C:\Users\Jade\Source\Repos\Testing\Testing\obj\Debug\Testing.DisplayRecord.resources
+C:\Users\Jade\Source\Repos\Testing\Testing\obj\Debug\Testing.Success.resources
+C:\Users\Jade\Source\Repos\Testing\Testing\obj\Debug\Testing.InputError.resources
+C:\Users\Jade\Source\Repos\Testing\Testing\obj\Debug\Testing.ErrorTesting.resources
+C:\Users\Jade\Source\Repos\Testing\Testing\obj\Debug\Testing.SummaryView.resources
+C:\Users\Jade\Source\Repos\Testing\Testing\bin\Debug\Testing.xml

@@ -1,0 +1,15 @@
+C:\Users\Jade\Source\Repos\Testing\Testing\bin\Release\Family Tree Creator.exe.config
+C:\Users\Jade\Source\Repos\Testing\Testing\bin\Release\Family Tree Creator.exe
+C:\Users\Jade\Source\Repos\Testing\Testing\bin\Release\Family Tree Creator.pdb
+C:\Users\Jade\Source\Repos\Testing\Testing\obj\Release\FTC.DisplayRecord.resources
+C:\Users\Jade\Source\Repos\Testing\Testing\obj\Release\FTC.ErrorTesting.resources
+C:\Users\Jade\Source\Repos\Testing\Testing\obj\Release\FTC.MainWindow.resources
+C:\Users\Jade\Source\Repos\Testing\Testing\obj\Release\FTC.NewRecord.resources
+C:\Users\Jade\Source\Repos\Testing\Testing\obj\Release\FTC.Properties.Resources.resources
+C:\Users\Jade\Source\Repos\Testing\Testing\obj\Release\FTC.Success.resources
+C:\Users\Jade\Source\Repos\Testing\Testing\obj\Release\FTC.SummaryView.resources
+C:\Users\Jade\Source\Repos\Testing\Testing\obj\Release\Family Tree Creator.csproj.GenerateResource.cache
+C:\Users\Jade\Source\Repos\Testing\Testing\obj\Release\Family Tree Creator.csproj.CoreCompileInputs.cache
+C:\Users\Jade\Source\Repos\Testing\Testing\obj\Release\Family Tree Creator.exe
+C:\Users\Jade\Source\Repos\Testing\Testing\obj\Release\Family Tree Creator.pdb
+C:\Users\Jade\Source\Repos\Testing\Testing\obj\Release\Family Tree Creator.csprojAssemblyReference.cache

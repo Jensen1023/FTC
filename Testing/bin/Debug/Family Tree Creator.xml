@@ -1,0 +1,477 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Family Tree Creator</name>
+    </assembly>
+    <members>
+        <member name="T:FTC.DisplayRecord">
+            <summary>
+            This form displays detailed information on the record chosen from the combobox.
+            </summary>
+        </member>
+        <member name="M:FTC.DisplayRecord.#ctor(FTC.MainWindow)">
+            <summary>
+            Initialize a DisplayRecord form.
+            </summary>
+            <remarks>
+            This form displays detailed information on the record chosen from the combobox.
+            </remarks>
+            <param name="ParentW">Links this form to the main window.</param>
+        </member>
+        <member name="F:FTC.DisplayRecord.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:FTC.DisplayRecord.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:FTC.DisplayRecord.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:FTC.ErrorTesting.#ctor(System.Int32)">
+            <summary>
+            A form only used for debugging.
+            </summary>
+            <param name="num"></param>
+        </member>
+        <member name="M:FTC.ErrorTesting.#ctor(System.String)">
+            <summary>
+            A form only used for debugging.
+            </summary>
+            <param name="Errr"></param>
+        </member>
+        <member name="F:FTC.ErrorTesting.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:FTC.ErrorTesting.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:FTC.ErrorTesting.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:FTC.MainWindow">
+            <summary>
+            Creates the main form that runs everything in the application.
+            All other forms are displayed in a panel within this form.
+            </summary>
+        </member>
+        <member name="M:FTC.MainWindow.#ctor">
+            <summary>
+            Initialize the main form.
+            Also creates new instances for all of the declared objects of the form.
+            </summary>
+        </member>
+        <member name="M:FTC.MainWindow.Reset">
+            <summary>
+            Resets all objects in the main form.
+            </summary>
+            <remarks>
+            Used when the New or Open options of the menu strip are selected.
+            </remarks>
+        </member>
+        <member name="M:FTC.MainWindow.Disable_Menu">
+            <summary>
+            Disables side buttons when a form is loaded in the main form's panel.
+            </summary>
+        </member>
+        <member name="M:FTC.MainWindow.Enable_Menu">
+            <summary>
+            Reenable side buttons once a panel form is closed.
+            </summary>
+        </member>
+        <member name="M:FTC.MainWindow.GetRecordNum">
+            <summary>
+            Gets the current record number.
+            </summary>
+            <remarks>
+            Used to determine how many records are currently stored.
+            Note: A dummy record is added initially to match up a record's
+            number with its index in the list.
+            </remarks>
+            <returns>
+            The current number of records stored.
+            </returns>
+        </member>
+        <member name="M:FTC.MainWindow.NextRec">
+            <summary>
+            Increases the current record number.
+            </summary>
+            <remarks>
+            Increases when a new record is added.
+            </remarks>
+        </member>
+        <member name="M:FTC.MainWindow.AddNewRecord(System.Int32,System.String,System.String,System.String,System.String,System.Collections.Generic.List{System.String},System.DateTime,System.DateTime,System.Boolean,System.Int32,FTC.Couples,System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Adds a new record to the record list.
+            </summary>
+            <remarks>
+            Called upon successful completion of a <c>NewRecord</c> form.
+            </remarks>
+            <param name="R">The current record number.</param>
+            <param name="Fn">String containing first name.</param>
+            <param name="Mn">String containing middle name.</param>
+            <param name="Ln">String containing last name.</param>
+            <param name="Mdn">String containing maiden name.</param>
+            <param name="Prev">List of strings containing any previous last names used.</param>
+            <param name="Bir">Datetimne containing the date of birth.</param>
+            <param name="Dea">Datetime containing the date of death.</param>
+            <param name="Mal">Bool representing gender (true for male).</param>
+            <param name="Sp">The listed spouse's record number.</param>
+            <param name="C">A <c>Couples</c> containing the listed parents.</param>
+            <param name="K">A list of the record numbers of the listed children.</param>
+        </member>
+        <member name="M:FTC.MainWindow.GetFullName(System.Int32)">
+            <summary>
+            Get a record's full name (excluding any previously used last names).
+            </summary>
+            <param name="index">The record number that corresponds to the needed name.</param>
+            <returns>
+            A string containing a full name.
+            </returns>
+        </member>
+        <member name="M:FTC.MainWindow.GetLastName(System.Int32)">
+            <summary>
+            Get a record's last name.
+            </summary>
+            <param name="index">The record number that corresponds to the needed name.</param>
+            <returns>
+            A string containing the last name.
+            </returns>
+        </member>
+        <member name="M:FTC.MainWindow.GetFirstName(System.Int32)">
+            <summary>
+            Get a record's first name.
+            </summary>
+            <param name="index">The record number that corresponds to the needed name.</param>
+            <returns>
+            A string containing the first name.
+            </returns>
+        </member>
+        <member name="M:FTC.MainWindow.GetMaidenName(System.Int32)">
+            <summary>
+            Get a record's maiden name.
+            </summary>
+            <param name="index">The record number that corresponds to the needed name.</param>
+            <returns>
+            A string containing the maiden name.
+            </returns>
+        </member>
+        <member name="M:FTC.MainWindow.GetGender(System.Int32)">
+            <summary>
+            Get a record's gender.
+            </summary>
+            <param name="index">The record number that corresponds to the needed gender.</param>
+            <returns>
+            A bool containing the gender (true is male).
+            </returns>
+        </member>
+        <member name="M:FTC.MainWindow.GetDateOfBirth(System.Int32)">
+            <summary>
+            Get a record's date of birth.
+            </summary>
+            <param name="index">The record number that corresponds to the needed date.</param>
+            <returns>
+            A DateTime containing the date of birth.
+            </returns>
+        </member>
+        <member name="M:FTC.MainWindow.GetDateOfDeath(System.Int32)">
+            <summary>
+            Get a record's date of death.
+            </summary>
+            <param name="index">The record number that corresponds to the needed date.</param>
+            <returns>
+            A DateTime containing the date of death.
+            </returns>
+        </member>
+        <member name="M:FTC.MainWindow.GetSpouse(System.Int32)">
+            <summary>
+            Get a record's spouse number.
+            </summary>
+            <param name="index">The record number whose spouse is needed.</param>
+            <returns>
+            The spouse's record number.
+            </returns>
+        </member>
+        <member name="M:FTC.MainWindow.GetChildren(System.Int32)">
+            <summary>
+            Get a record's children.
+            </summary>
+            <param name="index">The record number to get children from.</param>
+            <returns>
+            A list containing the record numbers of the children.
+            </returns>
+        </member>
+        <member name="M:FTC.MainWindow.GetParentsFromRecord(System.Int32)">
+            <summary>
+            Get the parent record numbers of a target record.
+            </summary>
+            <param name="index">The record number to get parents of.</param>
+            <returns>A Couples object containing both parents' record numbers.</returns>
+        </member>
+        <member name="M:FTC.MainWindow.SetLastName(System.Int32,System.String)">
+            <summary>
+            Set the target record's last name.
+            </summary>
+            <param name="index">Target record number.</param>
+            <param name="LName">Target's last name</param>
+        </member>
+        <member name="M:FTC.MainWindow.SetMaidenName(System.Int32,System.String)">
+            <summary>
+            Set the target record's maiden name.
+            </summary>
+            <param name="index">Target record number.</param>
+            <param name="MDName">Target's maiden name.</param>
+        </member>
+        <member name="M:FTC.MainWindow.SetChildren(System.Collections.Generic.List{System.Int32},System.Int32)">
+            <summary>
+            Set the list of children for the target record.
+            </summary>
+            <param name="K">List of children record numbers.</param>
+            <param name="index">Target record's number.</param>
+        </member>
+        <member name="M:FTC.MainWindow.LogParent(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Adds the currently created record number into the parents list.
+            </summary>
+            <remarks>
+            Creates a new Couples object if no spouse was selected for this record,
+            otherwise links this record to its spouse's Couples object.
+            </remarks>
+            <param name="RecordNum">The number of the record being added.</param>
+            <param name="Spouse">The spouse number of the current record.</param>
+            <param name="Gend">The gender of the current record.</param>
+        </member>
+        <member name="M:FTC.MainWindow.GetNumParents">
+            <summary>
+            Gets the number of Couples objects in the parents list.
+            </summary>
+            <returns>
+            The number of items in the list.
+            </returns>
+        </member>
+        <member name="M:FTC.MainWindow.GetParentsFromParentList(System.Int32)">
+            <summary>
+            Gets a target Couples object from the parents list.
+            </summary>
+            <param name="index">The index of the couple to get.</param>
+            <returns>
+            The Couples object (male and/or female record numbers) at the specified index.
+            </returns>
+        </member>
+        <member name="M:FTC.MainWindow.SaveData(System.Boolean)">
+            <summary>
+            Saves all current record information to a .gen file
+            </summary>
+            <remarks>
+            Uses AES encryption to store the information to file so that users can't
+            modify it without using this program.
+            </remarks>
+            <param name="SaveAs">A bool to determine if this was called from Save or Save As.</param>
+        </member>
+        <member name="F:FTC.MainWindow.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:FTC.MainWindow.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:FTC.MainWindow.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:FTC.NewRecord">
+            <summary>
+            The form used to get user input for adding new records.
+            </summary>
+            <remarks>
+            Takes in user input and updates available choices for linked records as data fields are changed.
+            </remarks>
+        </member>
+        <member name="M:FTC.NewRecord.#ctor(FTC.MainWindow)">
+            <summary>
+            Intializes a New Record form and populates the initial choices.
+            </summary>
+            <param name="ParentW">Link this form to the main window.</param>
+        </member>
+        <member name="F:FTC.NewRecord.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:FTC.NewRecord.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:FTC.NewRecord.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:FTC.Program.Main">
+            <summary>
+            The main entry point for the application.
+            </summary>
+        </member>
+        <member name="T:FTC.Success">
+            <summary>
+            A simple form to indicate a successful record add attempt.
+            </summary>
+        </member>
+        <member name="M:FTC.Success.#ctor">
+            <summary>
+            A simple form to show a successful record add attempt.
+            </summary>
+        </member>
+        <member name="F:FTC.Success.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:FTC.Success.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:FTC.Success.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:FTC.SummaryView.#ctor(FTC.MainWindow)">
+            <summary>
+            Shows a brief summary of all currently stored records.
+            </summary>
+            <param name="ParentW">Links this form to the main window.</param>
+        </member>
+        <member name="F:FTC.SummaryView.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:FTC.SummaryView.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:FTC.SummaryView.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:FTC.Couples">
+            <summary>
+            A simple class containing two variables, a record number for both a father and mother.
+            </summary>
+            <remarks>
+            Used to link couples together, especially to make setting kids for couples easier.
+            </remarks>
+        </member>
+        <member name="M:FTC.Couples.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:FTC.Couples.#ctor(System.Int32,System.Boolean)">
+            <summary>
+            Main constructor.  Takes in a newly created record number and gender to set either a father or mother.
+            </summary>
+            <remarks>
+            Since a new couple is only created when a new record is added, only one record is sent in the constructor.
+            The other spouse is added later when they are linked through another record.
+            </remarks>
+            <param name="Record"></param>
+            <param name="Gend"></param>
+        </member>
+        <member name="M:FTC.Couples.GetFatherNumber">
+            <summary>
+            Get the male spouse.
+            </summary>
+            <returns>
+            Male spouse's record number.
+            </returns>
+        </member>
+        <member name="M:FTC.Couples.GetMotherNumber">
+            <summary>
+            Get the female spouse.
+            </summary>
+            <returns>
+            Female spouse's record number.
+            </returns>
+        </member>
+        <member name="M:FTC.Couples.SetFatherNumber(System.Int32)">
+            <summary>
+            Sets the father's record number.
+            </summary>
+            <param name="F">Record number of the father.</param>
+        </member>
+        <member name="M:FTC.Couples.SetMotherNumber(System.Int32)">
+            <summary>
+            Sets the mother's record number.
+            </summary>
+            <param name="M">Record number of the mother.</param>
+        </member>
+        <member name="M:FTC.TreeNode.SetSiblings(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Stores a list of sibling numbers. 
+            Not currently used (other than as a placeholder in save files) but left in for future implementation.
+            </summary>
+            <param name="NewSibs"></param>
+        </member>
+        <member name="M:FTC.TreeNode.GetSiblings">
+            <summary>
+            Returns a list of siblings for the current record. 
+            Not currently used (other than as a placeholder in save files) but left in for future implementation.
+            </summary>
+            <returns>Sibling List</returns>
+        </member>
+        <member name="T:FTC.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:FTC.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:FTC.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:FTC.Properties.Resources.success">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+    </members>
+</doc>
